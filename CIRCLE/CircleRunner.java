@@ -11,6 +11,9 @@ public class CircleRunner {
         double area = circcy.getArea();
         System.out.println(area);
 
-        
+        Circle circcys = new Circle(1.0);
+
+        double newarea = circcys.getArea();
+        System.out.println(newarea);
     }
 }
