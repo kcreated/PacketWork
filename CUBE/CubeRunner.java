@@ -1,15 +1,20 @@
 package CUBE;
 
 public class CubeRunner {
-    public static void main(String[]args){
+    public static void main(String[] args) {
         Cube ricky = new Cube(3.0);
+
         double vol = ricky.volume();
-        System.out.println("The area is " + vol);
+        System.out.println("The volume is " + vol + " cu. units.");
+
         double SA = ricky.surfaceArea();
-        System.out.println("The perimeter is " + SA);
+        System.out.println("The surface area is " + SA + " sq. units.");
+
+        ricky.setSideForVolume(125);
         double side = ricky.getSide();
-        System.out.println("The perimeter is " + side);
-        double SFV = ricky.setSideForVolume();
-        System.out.println("The perimeter is " + SFV);
-    
+        System.out.println("The side is now " + side + " units.");
+
+        double newSA = ricky.surfaceArea();
+        System.out.println("The surface area is " + newSA + " sq. units.");
+    }
 }
