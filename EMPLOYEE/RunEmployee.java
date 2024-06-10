@@ -13,6 +13,6 @@ public class RunEmployee {
 
         e.increase(3000.0);
         p = e.getPay();
-        System.out.println("Salary is " + p)
+        System.out.println("Salary is " + p); 
     }
 }
